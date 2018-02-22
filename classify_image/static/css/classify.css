@@ -1,8 +1,31 @@
 body {
-  background-color: #687DDB;
+  background-color: white;
   font-family: 'Noto Sans', sans-serif;
-  padding-top: 5%;
+  /* padding-top: 5%; */
   padding-bottom: 10%;
+}
+.header {
+  background-image: url('olympic.JPG');
+  background-size: cover;
+  height: 500px;
+}
+
+.title, .taglines{
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bones {
+  float: right;
+  margin-top: 30px;
+  padding-top: 45px;
+}
+
+.title {
+  float: left;
+  padding-top: 45px;
+  /* margin-left: 47px; */
 }
 
 .main-container {
@@ -29,6 +52,7 @@ body {
 
 .dd-container {
   z-index: 2;
+  /* top: -120px !important; */
 }
 
 .dd-card, .uf-card, .dt-card {
@@ -41,8 +65,8 @@ body {
 
 #drop-container {
   height: calc(100% - 50px);
-  border-style: dashed;
-  border-color: #687DDB;
+  /* border-style: dashed; */
+  /* border-color: #687DDB; */
   border-radius: 4px;
 }
 
