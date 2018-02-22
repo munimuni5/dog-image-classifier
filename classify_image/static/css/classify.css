@@ -5,8 +5,14 @@ body {
   text-align: center;
 }
 .champion-dogs {
-  border: 2px dashed #D41968;
+  top: -80px !important;
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 3px grey;
+  border-radius: 2px;
   padding: 5%;
+
 }
 .header {
   background-image: url('olympic.JPG');
