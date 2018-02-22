@@ -5,6 +5,11 @@ body {
   padding-bottom: 10%;
 }
 
+h1 {
+  text-align: center;
+  color: white;
+}
+
 .main-container {
   position: relative;
   height: 100%;
