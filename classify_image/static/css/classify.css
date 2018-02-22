@@ -81,20 +81,30 @@ h1 {
   overflow-y: auto;
 }
 
+.card .card-content {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+  height: 400px;
+  width: 550px;
+}
+.card {
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  height: 400px;
+  width: 550px;
+}
+
+
 #drop-container {
   height: calc(100% - 50px);
-<<<<<<< Updated upstream
-  /* border-style: dashed; */
-  /* border-color: #687DDB; */
-=======
-  border-style: dashed;
-  border-color: #D41968;
->>>>>>> Stashed changes
   border-radius: 4px;
 }
 
 .upload-icon {
-  color: #D41968;
+  color: #ca1468;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,7 +130,7 @@ h1 {
 }
 
 #browse-container {
-  background-color: #D41968;
+  background-color: #ca1468;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,7 +177,7 @@ h1 {
 
 .bar {
   height: 20px;
-  background-color: #342c60 !important;
+  background-color: #ca1468 !important;
 }
 
 .progress {
@@ -177,7 +187,7 @@ h1 {
 }
 
 .progress .determinate {
-  background-color: #342c60 !important;
+  background-color: #ca1468 !important;
 }
 
 .stat-card {
