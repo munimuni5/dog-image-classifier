@@ -28,6 +28,11 @@ body {
   /* margin-left: 47px; */
 }
 
+h1 {
+  text-align: center;
+  color: white;
+}
+
 .main-container {
   position: relative;
   height: 100%;
