@@ -2,7 +2,7 @@ body {
   background-color: white;
   font-family: 'Noto Sans', sans-serif;
   padding-bottom: 10%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -44,13 +44,21 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+}
+
 .main-container {
   position: relative;
   height: 100%;
 }
 
 .dog {
-  border: 5px solid #D41968;
+  border: 3px solid #D41968;
   border-radius: 100px;
   height: 200px;
   width: 200px;
@@ -86,23 +94,6 @@ h1 {
 .dt-card {
   overflow-y: auto;
 }
-
-.card .card-content {
-  padding: 24px;
-  border-radius: 0 0 2px 2px;
-  height: 400px;
-  width: 550px;
-}
-.card {
-  position: relative;
-  margin: .5rem 0 1rem 0;
-  background-color: #fff;
-  transition: box-shadow .25s;
-  border-radius: 2px;
-  height: 400px;
-  width: 550px;
-}
-
 
 #drop-container {
   height: calc(100% - 50px);
