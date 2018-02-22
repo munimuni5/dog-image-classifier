@@ -1,5 +1,15 @@
 $(document).ready(function() {
-
+$("#fullpage").fullpage({
+    anchors: ["test-dog"],
+    sectionSelector: '.section',
+    slidesNavigation: false,
+    css3: true,
+    scrollBar: true,
+    autoScrolling: false,
+    keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+});
   var dropContainer = document.getElementById('drop-container');
   dropContainer.ondragover = dropContainer.ondragend = function() {
     return false;

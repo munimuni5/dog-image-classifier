@@ -4,8 +4,6 @@ body {
   padding-bottom: 10%;
   text-align: center;
 }
-
-
 .champion-dogs {
   border: 2px dashed #D41968;
   padding: 5%;
@@ -70,7 +68,6 @@ h1 {
 
 .dd-container {
   z-index: 2;
-  /* top: -120px !important; */
 }
 
 .dd-card, .uf-card, .dt-card {
