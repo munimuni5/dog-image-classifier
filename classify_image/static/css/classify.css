@@ -32,6 +32,8 @@ body {
   float: right;
   margin-top: 30px;
   padding-top: 45px;
+  rotation-point:50% 50%;
+  rotation:180deg;
 }
 
 .title {
@@ -47,7 +49,7 @@ h1 {
 h2 {
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  font-size: 1.56rem;
+  font-size: 1.60em !important;
   line-height: 110%;
   margin: 1.78rem 0 1.424rem 0;
 }
