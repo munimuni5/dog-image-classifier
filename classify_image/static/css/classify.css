@@ -58,12 +58,22 @@ h2 {
 }
 
 .dog {
-  border: 3px solid #D41968;
+  /* border: 3px solid #D41968; */
   border-radius: 100px;
   height: 200px;
   width: 200px;
 }
 
+p {
+  text-align: center;
+}
+
+.details {
+  background: gainsboro;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 10px;
+}
 
 .dd-container, .uf-container, .dt-container {
   position: absolute;
