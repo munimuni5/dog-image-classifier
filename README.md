@@ -1,38 +1,18 @@
-# ImageClassification-Server
-Image classification with Web API and UI.<br>
-It's is written in Django along with Tensorflow uing [Google's Inception v3 model](https://storage.googleapis.com/download.tensorflow.org/models/inception_dec_2015.zip)<br>
-The web interface is made using [materializecss](http://materializecss.com/) and [jQuery](https://jquery.com/)<br>
-It is extension of [this](https://github.com/DeepBlueCitzenService/Tensorflow-Server) project.
+# Dog Classification
+39 and Canine is a project that uses [Google's Inception v3 model](https://storage.googleapis.com/download.tensorflow.org/models/inception_dec_2015.zip) with Tensorflow along with Django as a server to create a web interface to allow users to upload a photo of a dog for breed classification (the model has been trained with ~120 breeds).
+The web interface is made using [materializecss](http://materializecss.com/) and [jQuery](https://jquery.com/)
+It is extension of [this](https://github.com/DeepBlueCitzenService/Tensorflow-Server) project and the Django server is based on [this](http://tf-classify.herokuapp.com/classify_image/classify/) project's, which can be found [here]() on github.
 
-## Web Interface
-The Web Interface can be found at [http://tf-classify.herokuapp.com](http://tf-classify.herokuapp.com)
+## Live Site:
+[39andCanine](http://thirty9andcanine.herokuapp.com/)
 
-## Web API
-You can classify using web API by sending a POST request at [http://tf-classify.herokuapp.com/classify_image/classify/api/](http://tf-classify.herokuapp.com/classify_image/classify/api/)<br>
-
-#### Input
-Parameter | Type                           | Description
---------- | ------------------------------ | -----------------------------------------------------------------------------------
-image     | file                           | Image file that you want to classify.
-image64   | text                           | Image in base64 form that you want to classify. Currently supports JPEG images only
-k         | text<br>(optional, default=10) | Return top-k categories of the results. Must me string in integer format.
-
-Note: you need to send either 'image' or 'image64'
-
-#### Result
-Parameter    | Type                | Description
------------- | ------------------- | --------------------------------------------
-success      | bool                | Whether classification was sucessfuly or not 
-confidence   | category, float     | pair of category and it's confidence
-
-Note: *category* is not paramater name but string of the category.<br> 
-Example:  {"success": true, "confidence": {  "mongoose": 0.87896, "hare": 0.00123 }}
-
+## Created Using:
+* TensorFlow's tutorial for image classification neural network
+* Stanford's collection of dog images [http://vision.stanford.edu/aditya86/ImageNetDogs/](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 
 ## Using Retrained Inception Model
 * Retrain the model using your images. Refer [here](https://www.tensorflow.org/tutorials/image_retraining).
-* [Fork](https://github.com/CCD-1997/image-classify-server#fork-destination-box) this repo
+* Fork and clone this repo
 * Replace the generated graph and label files in `/classify_image/inception_model/`
-* Deploy the Django project
-
-
+* Check the views.py file to ensure that the final result model name is correct (it currently reads final_result:0--this is determined by your tensorflow project)
+* Deploy the Django project on heroku or a similar platform
